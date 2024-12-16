@@ -4,21 +4,229 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ENTS | Home</title>
+
+	<!------STYLE SHEETS----->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/style.css">
+
+	<!-----FONTS----->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: lightpink;">
+
+
+<body class="background">
 	<header>
-		<h1 style="color: blueviolet;">Hello world</h1>
-		<p>Nice to meet you</p>
-		<p>what does this do?</p>
+		<!--Desktop Nav-->
+		<nav id="top-nav" class="flex-row top-nav hidden-mobile">
+			<div><a href="index.html"><img src="images/ENTS-Crest-Wiki.png" class="logo" alt="ENTS logo of a white rocketship on blue badge"></a>
+			</div>
+
+			<div>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="membership.html">Membership</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="studios.html">Studios</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="member-buttons">
+				<a href="#"><img src="images/Member Login.svg" alt="icon of person for login"></a>
+				<a href="#"><img src="images/Chat.svg" alt="icon of chat bubble"></a>
+			</div>
+		</nav>
+
+		<!--Mobile Nav-->
+		<nav id="top-nav" class="flex-row top-nav hidden-desktop">
+			<div><a href="index.html"><img src="images/ENTS-Crest-Wiki.png" class="logo" alt="ENTS logo of a white rocketship on blue badge"></a>
+			</div>
+
+			<div><a href="#"><img src="images/Menu button.svg" alt="icon of menu button"></a></div>
+
+		</nav>
 	</header>
 
-	<section>
+
+<!------------HERO SECTION---------->
+	<!--Desktop Hero-->
+	<section class="padding-default flex-row hidden-mobile">
+		<div class="width-55">
+			<p id="title">Empowering you to create and collaborate like never before</p>
+			<button class="btn-orange btn"><a>Join now</a></button>
+		</div>
+
+		<div class="hero-img-wrap"><img src="images/Hero.jpg" class="hero-img" alt="person doing woodworking"></div>
 	</section>
 
-	<section></section>
+	<!--Mobile Hero-->
+	<section class="hidden-desktop flex-col">
+		<div class="home-hero-wrap"><img src="images/Hero.jpg" class="hero-img" alt="person doing woodworking"></div>
 
-	<section></section>
+		<div class="padding-24 hero-flex">
+			<p id="title">Empowering you to create and collaborate like never before</p>
+			<button class="btn-orange btn width-90"><a>Join now</a></button>
+		</div>
+	</section>
+
+<!---------ABOUT SECTION----------->
+	<!--Desktop About-->
+	<section class="flex-row padding-40 hidden-mobile">
+		<div><img src="images/About.jpg" class="about-img" alt="two people at a workbench at a woodworking studio"></div>
+
+		<div class="padding-40">
+			<h2>What is ENTS?</h2>
+			<p class="body-big">The Edmonton New Technology Society is Edmonton’s original makerspace!
+			<br>
+			<br>
+			ENTS is a non-profit, member-driven society of makers, artists, hobbyists and friends.</p>
+		</div>
+	</section>
+
+	<!--Mobile About-->
+	<section class="flex-col hidden-desktop">
+		<div class="padding-40">
+			<h2>What is ENTS?</h2>
+			<p class="body-big">The Edmonton New Technology Society is Edmonton’s original makerspace!
+			<br>
+			<br>
+			ENTS is a non-profit, member-driven society of makers, artists, hobbyists and friends.</p>
+		</div>
+
+		<div><img src="images/About.jpg" class="about-img" alt="two people at a workbench at a woodworking studio"></div>
+	</section>
+
+<!---------BANNER---------->
+	<section class="banner">
+		<p class="banner-text">Create, build, repair & work on projects with like minded people!</p>
+	</section>
+
+
+<!----------HOW DOES IT WORK---------->
+	<!--Desktop How Does it Work-->
+	<section class="flex-col padding-60 hidden-mobile">
+		<h2>How does it work?</h2>
+
+		<div class="flex-row padding-default">
+			<div class="home-card">
+				<img src="images/Book a tour.jpg" class="img-100" alt="person writing in notebook">
+				<p class="card-text">Book a tour</p>
+			</div>
+
+			<div class="home-card">
+				<img src="images/Studios.jpg" class="img-100" alt="person doing pottery">
+				<p class="card-text">Studios</p>
+			</div>
+
+			<div class="home-card">
+				<img src="images/Membership.jpg" class="img-100" alt="person in woodshop">
+				<p class="card-text">Membership</p>
+			</div>
+		</div>
+	</section>
+
+	<!--Mobile How Does It Work-->
+	<section class="flex-col padding-40 hidden-desktop">
+		<h2>How does it work?</h2>
+
+		<div class="flex-col">
+			<div class="home-card">
+				<img src="images/Mobile-Tour.jpg" class="img-100" alt="person writing in notebook">
+				<p class="card-text">Book a tour</p>
+			</div>
+
+			<div class="home-card">
+				<img src="images/Mobile-Studios.jpg" class="img-100" alt="person doing pottery">
+				<p class="card-text">Studios</p>
+			</div>
+
+			<div class="home-card">
+				<img src="images/Mobile-Membership.jpg" class="img-100" alt="person in woodshop">
+				<p class="card-text">Membership</p>
+			</div>
+		</div>
+	</section>
+
+
+<!-------------UPCOMING EVENTS----------->
+	<!--Desktop Upcoming Events-->
+	<section class="flex-row hidden-mobile">
+		<div class="blue flex-col padding-40">
+			<h2 class="h2-reverse">Check out our upcoming events!</h2>
+			<button class="btn-white btn-2 width-60"><a href="#">Learn more<img class="arrow" src="images/DarkArrow-Desktop.svg" alt="icon of arrow"></a></button>
+		</div>
+
+		<div class="flex-events"><img src="images/Events.jpg" class="img-100" alt="two people at pottery wheels"></div>
+	</section>
+
+	<!--Mobile Upcoming Events-->
+	<section class="hidden-desktop">
+		<div class="blue padding-24">
+			<h2 class="h2-reverse">Check out our upcoming events!</h2>
+			<button class="margin-top btn-white btn-2"><a href="#">Learn more<img class="arrow" src="images/DarkArrow-Desktop.svg" alt="icon of arrow"></a></button>
+		</div>
+	</section>
+
+<!----------FOOTER---------->
+	<footer class="footer footer-grid">
+		<div class="address-grid">
+			<p>Edmonton New Technology Society</p>
+			<p><a href="https://maps.app.goo.gl/b566CwtF4ZJ9wvHUA" style="text-decoration: none;" class="reverse">12001 149 St NW Edmonton,<br> AB T5L 2J2</a></p>
+			<p>directors@ENTS.ca</p>
+		</div>
+
+		<div class="footer-nav-grid">
+			<ul class="footer-nav">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Donations</a></li>
+				<li><a href="#">The Board</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Membership</a></li>
+				<li><a href="#">Tour Booking</a></li>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Studios</a></li>
+			</ul>
+		</div>
+
+		<div class="member-grid">
+			<ul>
+				<li><a href="#">Member Login</a></li>
+				<li><a href="#">Member Chat</a></li>
+			</ul>
+		</div>
+
+		<div class="social-grid">
+			<p>Social Media</p>
+
+			<div class="icon-flex">
+				<a href="#"><img src="images/IG.svg" alt="Instagram icon"></a>
+				<a href="#"><img src="images/FB.svg" alt="Facebook icon"></a>
+			</div>
+		</div>
+	</footer>
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
